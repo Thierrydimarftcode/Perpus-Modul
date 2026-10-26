@@ -28,7 +28,7 @@ if (isset ($_POST['login'])){
     <title>Login Perpustakaan</title>
 </head>
 <body>
-    //Di edit oleh Herdynan
+    //Di edit oleh Herdynan Dzaki Hisyam
     <h2>Login Perpustakaan</h2>
     <form method="POST" action="">
         <label for="">Username:</label> <br>
