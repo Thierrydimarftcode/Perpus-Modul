@@ -23,6 +23,7 @@ include 'koneksi.php';
    <title>Register SMK Muhammadiyah 3</title>
  </head>
  <body>
+   //Diedit oleh Herdinan
    <h2>Registrasi Petugas Perpustakaan</h2>
    <form method="POST" action="">
       <label>Nama Lengkap :</label> <br>
