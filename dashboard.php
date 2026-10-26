@@ -22,6 +22,7 @@ if (!isset($_SESSION['status_login'])) {
     <a href="logout.php"><button>Logout</button></a>
     <br> <br>
 
+    // Editan dari Dimar
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
