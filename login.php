@@ -28,13 +28,13 @@ if (isset ($_POST['login'])){
     <title>Login Perpustakaan</title>
 </head>
 <body>
-    //Di edit oleh Herdynan Dzaki Hisyam
+    <!--Diedit oleh Thierry -->
     <h2>Login Perpustakaan</h2>
     <form method="POST" action="">
         <label for="">Username:</label> <br>
-        <input type="text" name="username" required> <br> <br>
+        <input type="text" name="username" placeholder="Masukkan username anda" required> <br> <br>
         <label for="">Password:</label> <br>
-        <input type="password" name="password" required> <br> <br>
+        <input type="password" name="password" placeholder="Masukkan password anda" required> <br> <br>
         <button type="submit" name="login">Login</button>
     </form>
     <p>Belum punya akun? <a href="register.php">Daftar di sini</a></p>
