@@ -23,7 +23,7 @@ if (!isset($_SESSION['status_login'])) {
     <a href="logout.php"><button>Logout</button></a>
     <br> <br>
 
-    // Editan dari Dimar
+    // Editan dari Thierry
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
@@ -36,6 +36,26 @@ if (!isset($_SESSION['status_login'])) {
                 <th>Aksi</th>
             </tr>
         </thead>
+        <tbody>
+            <?php 
+            $no = 1;
+            $query = mysqli_query($koneksi, "SELECT * FROM buku ORDER BY id DESC");
+            while ($row = mysqli_fetch_assoc($query)) {
+                ?>
+                <tr>
+                    <td><?php echo $no++; ?></td>
+                    <td><?php echo $row['judul']; ?></td>
+                    <td><?php echo $row['pengarang']; ?></td>
+                    <td><?php echo $row['penerbit']; ?></td>
+                    <td><?php echo $row['tahun_terbit']; ?></td>
+                    <td><?php echo $row['stok']; ?></td>
+                    <td>
+                        <a href="edit.php?id = <?php echo $row['id']; ?>">Edit</a>
+                        <a href="hapus.php?id = <?php echo $row['id']; ?>" onclick = "return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
+                    </td>
+                </tr>
+                <?php } ?>
+        </tbody>
     </table>
 </body>
 </html>
