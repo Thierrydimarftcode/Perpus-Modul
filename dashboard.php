@@ -20,7 +20,7 @@ if (!isset($_SESSION['status_login'])) {
     <h1>Selamat datang, <?php echo $_SESSION['nama_lengkap'];?>!</h1>
     <h3>Sistem Informasi Perpustakaan SMK Muhammadiyah 3 Kota Tangerang Selatan</h3>
     <a href="tambah.php"><button>+Tambah Buku</button></a>
-    <a href="logout.php"><button>Logout</button></a>
+    <a href="logout.php" onclick = "return confirm('Yakin ingin keluar dari akun ini?')"><button>Logout</button></a>
     <br> <br>
 
     <!--Diedit oleh Thierry -->
