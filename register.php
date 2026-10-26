@@ -27,11 +27,11 @@ include 'koneksi.php';
    <h2>Registrasi Petugas Perpustakaan</h2>
    <form method="POST" action="">
       <label>Nama Lengkap :</label> <br>
-      <input type="text" name="nama_lengkap" required> <br> <br>
+      <input type="text" name="nama_lengkap" placeholder="Masukkan nama anda" required> <br> <br>
       <label>Username :</label> <br>
-      <input type="text" name="username" required> <br> <br>
+      <input type="text" name="username" placeholder="Buat username anda" required> <br> <br>
       <label>Password :</label> <br>
-      <input type="password" name="password" required> <br> <br>
+      <input type="password" name="password" placeholder="Buat password anda" required> <br> <br>
       <button type="submit" name="register">Daftar</button>
    </form>
 
