@@ -50,8 +50,8 @@ if (!isset($_SESSION['status_login'])) {
                     <td><?php echo $row['tahun_terbit']; ?></td>
                     <td><?php echo $row['stok']; ?></td>
                     <td>
-                        <a href="edit.php?id = <?php echo $row['id']; ?>">[Edit]</a>
-                        <a href="hapus.php?id = <?php echo $row['id']; ?>" onclick = "return confirm('Yakin ingin menghapus data buku ini?')">[Hapus]</a>
+                        <a href="edit.php?id=<?php echo $row['id']; ?>">[Edit]</a>
+                        <a href="hapus.php?id=<?php echo $row['id']; ?>" onclick = "return confirm('Yakin ingin menghapus data buku ini?')">[Hapus]</a>
                     </td>
                 </tr>
                 <?php } ?>
